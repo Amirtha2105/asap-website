@@ -76,7 +76,7 @@ const About = () => {
 
         <div className="mt-24 text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-slate-800">
-            Why India?
+            Why India????
           </h3>
 
           <p className="mt-4 text-slate-500 max-w-3xl mx-auto">
