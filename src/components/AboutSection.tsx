@@ -63,8 +63,8 @@ const About = () => {
         <div className="max-w-5xl mx-auto">
           <p className="text-slate-600 text-lg leading-9 text-center">
             We specialize in supporting accounting practices with day-to-day finance 
-            processes through dedicated oAshore teams that operate as an extension of our 
-            clients’ businesses. Our goal is to help firms improve eAiciency, reduce 
+            processes through dedicated offshore teams that operate as an extension of our 
+            clients’ businesses. Our goal is to help firms improve efficiency, reduce 
             operational workload, and scale profitably without compromising on quality. 
             With strong experience in finance operations, process management, and 
             accounting support functions, we focus on delivering accuracy, consistency, and 
