@@ -76,7 +76,9 @@ const WhyChooseUs = () => {
   return (
     <section
       id="whyus"
-      className="py-28 bg-white"
+      className="py-28 bg-gradient-to-b
+                        from-indigo-50
+                        to-white"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-10">
 

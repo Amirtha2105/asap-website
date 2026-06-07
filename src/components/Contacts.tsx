@@ -10,7 +10,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-28 bg-slate-50"
+      className="py-28 bg-gradient-to-b
+                        from-cyan-50
+                        to-emerald-50"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 

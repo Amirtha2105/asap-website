@@ -40,7 +40,9 @@ const Careers = () => {
   return (
     <section
       id="careers"
-      className="py-28 bg-white"
+      className="py-28 bg-gradient-to-b
+                          from-violet-50
+                          to-cyan-50"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 

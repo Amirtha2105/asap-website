@@ -27,12 +27,16 @@ const benefits = [
     title: "Scalability Talent Availability",
   }
 ];
-
 const About = () => {
   return (
     <section
       id="about"
-      className="py-28 bg-white"
+      className="
+          py-28
+          bg-gradient-to-b
+          from-white
+          to-sky-50
+          "
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 

@@ -11,7 +11,7 @@ const services = [
 
 const Hero = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-blue-50 flex items-center">
+    <section className="min-h-screen bg-gradient-to-br from-sky-50 via-white to-cyan-50 flex items-center">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-24">
 
