@@ -23,7 +23,7 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center text-5xl md:text-7xl font-bold text-slate-800"
         >
-          [Company Name]
+          MaAthMagic Business Services
         </motion.h1>
 
         {/* Main Heading */}

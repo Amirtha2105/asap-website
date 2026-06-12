@@ -52,7 +52,7 @@ const About = () => {
 
         <div className="max-w-5xl mx-auto mt-12">
           <p className="text-slate-600 text-lg leading-9 text-center">
-            [Company Name] is an India-based Offshore accounting support company 
+            MaAthMagic Business Services is an India-based Offshore accounting support company 
             providing reliable and scalable bookkeeping and finance operations services to 
             Accounting firms, Startups and Scale. 
           </p>

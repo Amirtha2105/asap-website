@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
 
           <h1 className="text-2xl font-bold text-slate-800">
-            [Company Name]
+            MaAthMagic Business Services
           </h1>
 
           <div className="hidden md:flex gap-8">

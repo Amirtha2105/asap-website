@@ -16,7 +16,7 @@ const Footer = () => {
           <div>
 
             <h2 className="text-3xl font-bold">
-              [Company Name]
+              MaAthMagic Business Services
             </h2>
 
             <p className="mt-5 text-slate-300 leading-8">
@@ -119,7 +119,7 @@ const Footer = () => {
         <div className="border-t border-slate-700 mt-12 pt-8">
 
           <p className="text-center text-slate-400 text-sm">
-            © 2026 [Company Name]. All Rights Reserved.
+            © 2026 MaAthMagic Business Services. All Rights Reserved.
           </p>
 
         </div>
