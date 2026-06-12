@@ -37,9 +37,9 @@ const Contact = () => {
           <div>
 
             <p className="text-slate-600 text-lg leading-8">
-              Looking for a reliable oAshore accounting support partner? 
+              Looking for a reliable offshore accounting support partner? 
               We would be happy to discuss how our India-based accounting support team 
-              can help your firm improve eAiciency and scalability. 
+              can help your firm improve efficiency and scalability. 
             </p>
 
             {/* Contact Information */}
