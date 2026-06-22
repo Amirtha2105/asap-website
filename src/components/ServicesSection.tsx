@@ -117,7 +117,7 @@ const Services = () => {
                 border
                 border-slate-200
                 hover:border-blue-300
-                hover:shadow-xl
+                hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)]
                 hover:-translate-y-2
                 transition-all
                 duration-300

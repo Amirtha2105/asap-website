@@ -43,7 +43,7 @@ const Process = () => {
   return (
     <section
       id="process"
-      className="py-28 bg-slate-50"
+      className="py-28 bg-gradient-to-b from-white to-violet-50"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
@@ -117,7 +117,7 @@ const Process = () => {
                     shadow-sm
                     border
                     border-slate-200
-                    hover:shadow-xl
+                    hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)]
                     transition-all
                     duration-300
                   "

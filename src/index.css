@@ -14,8 +14,8 @@ body {
 
 * {
   box-sizing: border-box;
-}
-.section-transition {
+  }
+  .section-transition {
   position: relative;
 }
 
@@ -30,3 +30,21 @@ body {
   position: relative;
   z-index: 1;
 }
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+  

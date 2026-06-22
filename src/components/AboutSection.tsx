@@ -104,7 +104,7 @@ const About = () => {
                 rounded-2xl
                 p-8
                 hover:bg-white
-                hover:shadow-xl
+                hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)]
                 hover:-translate-y-1
                 transition-all
                 duration-300
