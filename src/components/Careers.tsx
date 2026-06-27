@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { CAREERS_FORM_URL } from "../constants/forms";
 import {
   FaUserTie,
   FaCalculator,
@@ -57,13 +58,12 @@ const Careers = () => {
         {/* Heading */}
 
         <div className="text-center">
-          
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
             Careers
           </h2>
 
           <p className="mt-6 text-lg text-[#B7C4D4] max-w-3xl mx-auto leading-8">
-            Join Our Team! We are building a high-performance finance operations team
+            We are building a high-performance finance operations team
             supporting international accounting firms.
           </p>
         </div>
@@ -141,9 +141,13 @@ const Careers = () => {
               ))}
             </div>
 
-            <button
+            <a
+              href={CAREERS_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="
                 mt-10
+                inline-block
                 bg-[#2163A6]
                 hover:bg-[#2E7BC4]
                 text-white
@@ -158,7 +162,7 @@ const Careers = () => {
               "
             >
               Apply Now
-            </button>
+            </a>
           </motion.div>
         </div>
       </div>

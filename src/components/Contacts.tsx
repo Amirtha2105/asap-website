@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { CONSULTATION_FORM_URL } from "../constants/forms";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -172,7 +173,10 @@ const Contact = () => {
                 Schedule a Free Consultation Today
               </h4>
 
-              <button
+              <a
+                href={CONSULTATION_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
                   mt-8
                   self-start
@@ -188,7 +192,7 @@ const Contact = () => {
                 "
               >
                 Schedule Consultation
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>

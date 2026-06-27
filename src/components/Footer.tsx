@@ -64,7 +64,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:divya.vasan18@gmail.com"
+                href="#"
                 className="
                   flex
                   items-center

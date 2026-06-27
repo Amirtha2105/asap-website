@@ -125,7 +125,6 @@ const Services = () => {
         {/* Heading */}
 
         <div className="text-center">
-
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
             Our Services
           </h2>
@@ -264,6 +263,12 @@ const Services = () => {
             </ul>
 
             <button
+              onClick={() => {
+                setSelectedService(null);
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="
                 mt-8
                 bg-[#2163A6]

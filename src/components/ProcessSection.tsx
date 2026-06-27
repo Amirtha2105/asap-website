@@ -68,14 +68,9 @@ const Process = () => {
         {/* Heading */}
 
         <div className="text-center mb-20">
-          <span className="uppercase tracking-[0.3em] text-[#6FA8DC] font-semibold text-sm">
-            Our Process
-          </span>
-
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
-            A Structured Approach To Offshore Support
+            Our Process
           </h2>
-
           <p className="mt-6 text-[#B7C4D4] max-w-3xl mx-auto text-lg">
             Our onboarding and delivery process is designed to ensure
             smooth collaboration, transparency, and long-term success.

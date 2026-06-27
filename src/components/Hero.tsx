@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { CONSULTATION_FORM_URL } from "../constants/forms";
 
 const services = [
   "Bookkeeping & Reconciliations",
@@ -188,7 +189,10 @@ const Hero = () => {
         {/* CTA Buttons */}
 
         <div className="flex flex-col sm:flex-row justify-center gap-5 mt-16">
-          <button
+          <a
+            href={CONSULTATION_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               bg-[#2163A6]
               hover:bg-[#2E7BC4]
@@ -201,10 +205,11 @@ const Hero = () => {
               transition
               duration-300
               hover:-translate-y-1
+              text-center
             "
           >
             Book a Consultation
-          </button>
+          </a>
 
           <a
             href="#services"
