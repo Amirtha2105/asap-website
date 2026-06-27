@@ -1,302 +1,206 @@
-import {
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 
 const advantages = [
   {
-    title: "Industry-Focused Approach",
-    desc: "We exclusively focus on accounting and finance support services.",
-  },
-  {
-    title: "Dedicated Team Model",
-    desc: "Our resources work as an extension of your internal operations.",
-  },
-  {
-    title: "Process Driven Delivery",
-    desc: "Standardized workflows and quality controls ensure consistency.",
-  },
-  {
-    title: "Data Confidentiality",
-    desc: "Secure handling of financial data with strong confidentiality practices.",
-  },
-  {
-    title: "Scalability",
-    desc: "Quickly scale your oAshore accounting support team based on business requirements.",
+    title: "Expertise You Can Trust",
+    desc: "Our professionals bring years of experience across industries and finance functions.",
   },
   {
     title: "Cost Efficiency",
-    desc: "Reduce operational costs while maintaining service quality.",
+    desc: "Reduce operational costs without compromising quality.",
   },
-
+  {
+    title: "Scalability",
+    desc: "Flexible solutions that grow with your business requirements.",
+  },
+  {
+    title: "Accuracy & Compliance",
+    desc: "Robust controls and quality checks ensure reliable financial information.",
+  },
+  {
+    title: "Technology Driven",
+    desc: "We leverage modern accounting platforms and automation tools to improve efficiency and transparency.",
+  },
 ];
 
-const industries = [
+const startupReasons = [
   {
-    title: "UK Accounting Firms",
-    description:
-      "Helping UK accounting practices scale efficiently through offshore bookkeeping and accounting support teams from India.",
-    areas: [
-      "Bookkeeping",
-      "AP/AR Processing",
-      "Payroll Support",
-      "VAT Workings",
-      "Month-End Accounting",
-      "Dedicated Offshore Teams",
-    ],
+    icon: "📈",
+    title: "Flexible Support Model",
+    desc: "Scale accounting support seamlessly as your business grows without increasing overhead.",
   },
   {
-    title: "Indian Accounting Firms",
-    description:
-      "Supporting Indian CA firms and accounting practices with scalable finance operations support and process management services.",
-    areas: [
-      "Bookkeeping Support",
-      "Accounting Process Outsourcing",
-      "Reconciliations",
-      "MIS Reporting Support",
-      "Back-Office Finance Operations",
-      "Resource Augmentation",
-    ],
+    icon: "💷",
+    title: "Cost-Effective Operations",
+    desc: "Access experienced finance professionals while significantly reducing in-house operational costs.",
   },
   {
-    title: "Startups & Scale-Ups",
-    description:
-      "Helping growing businesses streamline finance operations and focus on business expansion.",
-    areas: [
-      "Virtual Accounting Support",
-      "Finance Operations Management",
-      "Expense Tracking",
-      "Accounts Payable & Receivable",
-      "Monthly Financial Reporting",
-      "Cash Flow Support",
-    ],
+    icon: "⚙️",
+    title: "Process Efficiency",
+    desc: "Structured workflows, timely reporting, and standardized processes improve productivity and decision-making.",
+  },
+  {
+    icon: "🚀",
+    title: "Focus on Growth",
+    desc: "Leave day-to-day accounting operations to us while your team focuses on growing the business.",
   },
 ];
 
 const WhyChooseUs = () => {
   return (
-    <section
-      id="whyus"
-      className="py-28 bg-gradient-to-b
-                        from-indigo-50
-                        to-white"
-    >
-      <div className="max-w-6xl mx-auto px-6 lg:px-10">
+    <section id="whyus" className="relative overflow-hidden py-28 scroll-mt-24">
+      {/* Ambient glow layer only — base gradient lives in the shared page wrapper */}
+      <div className="absolute inset-0">
+        <div
+          className="
+            absolute top-1/3 right-0
+            w-[500px] h-[500px]
+            rounded-full
+            bg-[radial-gradient(circle,rgba(33,99,166,0.18),transparent_70%)]
+            blur-3xl
+          "
+        />
 
+        <div
+          className="
+            absolute bottom-0 -left-32
+            w-[440px] h-[440px]
+            rounded-full
+            bg-[radial-gradient(circle,rgba(20,68,120,0.2),transparent_70%)]
+            blur-3xl
+          "
+        />
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
         {/* Section Heading */}
 
         <div className="text-center mb-20">
-          <span className="uppercase tracking-[0.3em] text-blue-700 font-semibold">
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white max-w-4xl mx-auto leading-tight">
             Why Choose Us
-          </span>
-
-         <h2 className="mt-4 text-4xl md:text-5xl font-bold text-slate-800 max-w-4xl mx-auto leading-tight">
-            Your Reliable Offshore Accounting Partner
-        </h2>
+          </h2>
+          
         </div>
 
         {/* Main Title A */}
 
         <div className="mb-24">
-
-          <h3 className="text-3xl font-bold text-slate-800 mb-12">
+          <h3 className="text-3xl font-bold text-white mb-12">
             What Sets Us Apart
           </h3>
 
-          <h4 className="text-3xl font-bold text-slate-800 mb-5">
-            Reliable Offshore Partner for UK Accounting Firms
-         </h4>
+          <p className="text-xl text-[#9FC1E0] mb-10">
+            Reliable offshore partner for UK accounting firms
+          </p>
 
           <div className="space-y-8">
-
-            {advantages.map((item, index) => (
+            {advantages.map((item) => (
               <div
-                key={index}
+                key={item.title}
                 className="
                   flex
                   gap-5
                   border-l-4
-                  border-blue-200
+                  border-white/15
                   pl-6
-                  hover:border-blue-600
+                  hover:border-[#3E7CB1]
                   transition-all
                   duration-300
                 "
               >
-                <div className="mt-1 text-blue-700">
+                <div className="mt-1 text-[#6FA8DC]">
                   <FaArrowRight />
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-semibold text-slate-800">
+                  <h4 className="text-xl font-semibold text-white">
                     {item.title}
                   </h4>
-    
-                  <p className="mt-2 text-slate-600 leading-7">
+
+                  <p className="mt-2 text-[#B7C4D4] leading-7">
                     {item.desc}
                   </p>
                 </div>
               </div>
             ))}
-
           </div>
-
         </div>
-    </div>
+
         {/* Main Title B */}
 
-        <div className="mb-28">
-
-  <h3 className="text-3xl font-bold text-slate-800 text-center">
-    Industries We Support
-  </h3>
-
-  <p className="mt-5 text-center text-slate-600 text-lg max-w-3xl mx-auto">
-    We support businesses of different sizes with reliable accounting,
-    finance operations, and offshore resource solutions.
-  </p>
-
-  <div className="mt-14 space-y-8">
-
-    {industries.map((industry, index) => (
-      <div
-        key={index}
-        className="
-          bg-white
-          border
-          border-slate-200
-          rounded-3xl
-          p-8
-          hover:shadow-xl
-          hover:border-blue-300
-          transition-all
-          duration-300
-        "
-      >
-        <div className="text-center">
-
-          <div className="max-w-3xl mx-auto">
-            <h4 className="text-2xl font-bold text-slate-800">
-              {industry.title}
-            </h4>
-
-            <p className="mt-4 text-slate-600 leading-8">
-              {industry.description}
-            </p>
+        <div>
+          <div className="text-center">
+            <h3 className="text-3xl md:text-4xl font-bold text-white">
+              Why Startups & Growing Businesses Choose Us
+            </h3>
           </div>
 
-          <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {industry.areas.map((area, idx) => (
+          <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+            {startupReasons.map((item) => (
               <div
-                key={idx}
+                key={item.title}
                 className="
-                    bg-slate-50
-                    border
-                    border-slate-100
-                    rounded-full
-                    px-5
-                    py-3
-                    text-sm
-                    font-medium
-                    text-slate-700
-                    hover:border-blue-300
-                    hover:bg-blue-50
-                    transition
+                  group
+                  relative
+                  bg-white/[0.04]
+                  backdrop-blur-sm
+                  border
+                  border-white/10
+                  rounded-3xl
+                  p-8
+                  overflow-hidden
+                  hover:border-[#3E7CB1]/40
+                  hover:bg-white/[0.07]
+                  hover:shadow-[0_20px_50px_rgba(33,99,166,0.18)]
+                  hover:-translate-y-2
+                  transition-all
+                  duration-300
                 "
               >
-                {area}
+                <div
+                  className="
+                    absolute
+                    top-0
+                    left-0
+                    w-full
+                    h-1
+                    bg-gradient-to-r
+                    from-[#2163A6]
+                    to-[#6FA8DC]
+                    scale-x-0
+                    group-hover:scale-x-100
+                    origin-left
+                    transition-transform
+                    duration-500
+                  "
+                />
+
+                <div
+                  className="
+                    w-16
+                    h-16
+                    rounded-2xl
+                    bg-[#2163A6]/20
+                    flex
+                    items-center
+                    justify-center
+                    text-3xl
+                    mb-6
+                  "
+                >
+                  {item.icon}
+                </div>
+
+                <h4 className="text-2xl font-bold text-white">
+                  {item.title}
+                </h4>
+
+                <p className="mt-5 text-[#B7C4D4] leading-8">{item.desc}</p>
               </div>
             ))}
           </div>
-
         </div>
       </div>
-    ))}
-
-  </div>
-
-</div>
-
-        {/* Main Title C */}
-
-        <div>
-
-  <div className="text-center">
-
-    <h3 className="text-3xl font-bold text-slate-800">
-      Why Startups & Growing Businesses Choose Us
-    </h3>
-
-    <p className="mt-5 text-slate-600 text-lg">
-      Built for businesses that need flexible and scalable finance support.
-    </p>
-
-  </div>
-
-  <div className="mt-16 grid md:grid-cols-2 gap-8">
-
-  {[
-    {
-      title: "Flexible Support Model",
-      desc: "Scale accounting support based on your business growth.",
-    },
-    {
-      title: "Cost-Effective Operations",
-      desc: "Access experienced finance professionals without large in-house costs.",
-    },
-    {
-      title: "Process Efficiency",
-      desc: "Structured workflows and timely reporting support better decision-making.",
-    },
-    {
-      title: "Focus on Growth",
-      desc: "Spend less time managing finance operations and more time growing the business.",
-    },
-  ].map((item, index) => (
-    <div
-      key={index}
-      className="
-        text-center
-        bg-white
-        border
-        border-slate-200
-        rounded-3xl
-        p-8
-        hover:shadow-xl
-        hover:-translate-y-1
-        transition-all
-        duration-300
-      "
-    >
-      <div
-        className="
-          w-12
-          h-12
-          rounded-full
-          bg-blue-100
-          text-blue-700
-          flex
-          items-center
-          justify-center
-          mx-auto
-          font-bold
-        "
-      >
-        {index + 1}
-      </div>
-
-      <h4 className="mt-5 text-xl font-semibold text-slate-800">
-        {item.title}
-      </h4>
-
-      <p className="mt-4 text-slate-600 leading-7">
-        {item.desc}
-      </p>
-    </div>
-  ))}
-
-</div>
-
-</div>
     </section>
   );
 };

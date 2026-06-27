@@ -28,8 +28,7 @@ const processSteps = [
   {
     icon: <FaGraduationCap />,
     title: "Step 4 – Transition & Training",
-    description:
-      "Knowledge transfer, onboarding support, and seamless integration with your processes.",
+    description: "Knowledge transfer and onboarding support.",
   },
   {
     icon: <FaChartLine />,
@@ -41,24 +40,43 @@ const processSteps = [
 
 const Process = () => {
   return (
-    <section
-      id="process"
-      className="py-28 bg-gradient-to-b from-white to-violet-50"
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section id="process" className="relative overflow-hidden py-28 scroll-mt-24">
+      {/* Ambient glow layer only — base gradient lives in the shared page wrapper */}
+      <div className="absolute inset-0">
+        <div
+          className="
+            absolute top-0 left-1/4
+            w-[480px] h-[480px]
+            rounded-full
+            bg-[radial-gradient(circle,rgba(33,99,166,0.2),transparent_70%)]
+            blur-3xl
+          "
+        />
 
+        <div
+          className="
+            absolute bottom-0 right-1/4
+            w-[460px] h-[460px]
+            rounded-full
+            bg-[radial-gradient(circle,rgba(20,68,120,0.2),transparent_70%)]
+            blur-3xl
+          "
+        />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
         {/* Heading */}
 
         <div className="text-center mb-20">
-          <span className="uppercase tracking-[0.3em] text-blue-700 font-semibold">
+          <span className="uppercase tracking-[0.3em] text-[#6FA8DC] font-semibold text-sm">
             Our Process
           </span>
 
-          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-slate-800">
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
             A Structured Approach To Offshore Support
           </h2>
 
-          <p className="mt-6 text-slate-600 max-w-3xl mx-auto text-lg">
+          <p className="mt-6 text-[#B7C4D4] max-w-3xl mx-auto text-lg">
             Our onboarding and delivery process is designed to ensure
             smooth collaboration, transparency, and long-term success.
           </p>
@@ -67,19 +85,13 @@ const Process = () => {
         {/* Timeline */}
 
         <div className="relative">
-
           {/* Desktop Line */}
 
-          <div className="hidden lg:block absolute top-10 left-0 w-full h-1 bg-blue-100"></div>
+          <div className="hidden lg:block absolute top-10 left-0 w-full h-1 bg-white/10" />
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-
-            {processSteps.map((step, index) => (
-              <div
-                key={index}
-                className="relative text-center"
-              >
-
+            {processSteps.map((step) => (
+              <div key={step.title} className="relative text-center">
                 {/* Icon Circle */}
 
                 <div
@@ -88,19 +100,20 @@ const Process = () => {
                     w-20
                     h-20
                     rounded-full
-                    bg-white
+                    bg-[#0B1F33]
                     border-4
-                    border-blue-200
+                    border-white/15
                     flex
                     items-center
                     justify-center
-                    text-blue-700
+                    text-[#6FA8DC]
                     text-2xl
                     shadow-md
                     relative
                     z-10
-                    hover:border-blue-600
+                    hover:border-[#3E7CB1]
                     transition-all
+                    duration-300
                   "
                 >
                   {step.icon}
@@ -111,33 +124,29 @@ const Process = () => {
                 <div
                   className="
                     mt-8
-                    bg-white
+                    bg-white/[0.04]
+                    backdrop-blur-sm
                     rounded-2xl
                     p-6
-                    shadow-sm
                     border
-                    border-slate-200
-                    hover:shadow-[0_20px_50px_rgba(59,130,246,0.15)]
+                    border-white/10
+                    hover:border-[#3E7CB1]/40
+                    hover:bg-white/[0.07]
+                    hover:shadow-[0_20px_50px_rgba(33,99,166,0.18)]
                     transition-all
                     duration-300
                   "
                 >
-                  <h3 className="font-semibold text-slate-800">
-                    {step.title}
-                  </h3>
+                  <h3 className="font-semibold text-white">{step.title}</h3>
 
-                  <p className="mt-4 text-slate-600 text-sm leading-7">
+                  <p className="mt-4 text-[#B7C4D4] text-sm leading-7">
                     {step.description}
                   </p>
                 </div>
-
               </div>
             ))}
-
           </div>
-
         </div>
-
       </div>
     </section>
   );

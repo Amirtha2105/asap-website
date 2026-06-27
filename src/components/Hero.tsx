@@ -12,70 +12,62 @@ const services = [
 const Hero = () => {
   return (
     <section
+      id="hero"
       className="
         relative
         overflow-hidden
         min-h-screen
         flex
         items-center
-        bg-gradient-to-br
-        from-blue-100
-        via-sky-50
-        to-cyan-100
+        scroll-mt-24
       "
     >
-      {/* Blue Blob 1 */}
+      {/* Ambient glow layer only — base gradient now lives in the shared page wrapper */}
+      <div className="absolute inset-0">
+        {/* Slow-drifting navy glow, top right */}
+        <motion.div
+          animate={{
+            opacity: [0.5, 0.8, 0.5],
+            scale: [1, 1.15, 1],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="
+            absolute -top-40 -right-40
+            w-[640px] h-[640px]
+            rounded-full
+            bg-[radial-gradient(circle,rgba(33,99,166,0.35),transparent_70%)]
+            blur-3xl
+          "
+        />
 
-      <div
-        className="
-          absolute
-          top-0
-          left-0
-          w-[600px]
-          h-[600px]
-          rounded-full
-          bg-blue-500/40
-          blur-[180px]
-          animate-pulse
-        "
-      />
+        {/* Slow-drifting navy glow, bottom left, offset timing */}
+        <motion.div
+          animate={{
+            opacity: [0.4, 0.7, 0.4],
+            scale: [1.1, 0.95, 1.1],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: 2,
+          }}
+          className="
+            absolute -bottom-48 -left-32
+            w-[560px] h-[560px]
+            rounded-full
+            bg-[radial-gradient(circle,rgba(20,68,120,0.3),transparent_70%)]
+            blur-3xl
+          "
+        />
 
-      {/* Blue Blob 2 */}
+      </div>
 
-      <div
-        className="
-          absolute
-          bottom-0
-          right-0
-          w-[650px]
-          h-[650px]
-          rounded-full
-          bg-sky-500/40
-          blur-[200px]
-          animate-pulse
-        "
-      />
-
-      {/* Center Blob */}
-
-      <div
-        className="
-          absolute
-          top-1/2
-          left-1/2
-          -translate-x-1/2
-          -translate-y-1/2
-          w-[700px]
-          h-[700px]
-          rounded-full
-          bg-blue-300/30
-          blur-[220px]
-          animate-pulse
-        "
-      />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-24">
-
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-32 w-full">
         {/* Company Name */}
 
         <motion.h1
@@ -87,7 +79,8 @@ const Hero = () => {
             text-5xl
             md:text-7xl
             font-bold
-            text-blue-950
+            text-white
+            tracking-tight
           "
         >
           MaAthMagic Business Services
@@ -104,8 +97,8 @@ const Hero = () => {
             text-center
             text-2xl
             md:text-5xl
-            font-semibold
-            text-blue-900
+            font-bold
+            text-[#9FC1E0]
             max-w-5xl
             mx-auto
             leading-tight
@@ -125,10 +118,10 @@ const Hero = () => {
           className="
             mt-8
             text-center
-            text-slate-700
+            text-[#B7C4D4]
             text-lg
             md:text-xl
-            max-w-4xl
+            max-w-3xl
             mx-auto
             leading-relaxed
           "
@@ -145,12 +138,12 @@ const Hero = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
           className="
-            mt-20
+            mt-24
             text-center
             text-3xl
             md:text-4xl
             font-bold
-            text-blue-950
+            text-white
           "
         >
           Our Services
@@ -159,80 +152,82 @@ const Hero = () => {
         {/* Service Cards */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-
-          {services.map((service, index) => (
+          {services.map((service) => (
             <motion.div
-              key={index}
+              key={service}
               whileHover={{
-                y: -10,
-                scale: 1.04,
+                y: -8,
+                scale: 1.03,
               }}
               transition={{ duration: 0.25 }}
               className="
-                backdrop-blur-lg
-                bg-white/80
+                bg-white/[0.04]
+                backdrop-blur-sm
                 border
-                border-blue-100
+                border-white/10
+                shadow-[0_10px_35px_rgba(0,0,0,0.3)]
                 rounded-2xl
                 p-8
                 text-center
-                shadow-lg
-                hover:shadow-[0_20px_60px_rgba(59,130,246,0.25)]
-                hover:border-blue-300
+                text-white
+                hover:border-[#3E7CB1]/50
+                hover:bg-white/[0.07]
+                hover:shadow-[0_18px_45px_rgba(33,99,166,0.18)]
                 transition-all
                 duration-300
                 cursor-pointer
               "
             >
-              <h4 className="font-semibold text-slate-700 text-lg">
+              <h4 className="font-semibold text-[#DCE8F3] text-lg">
                 {service}
               </h4>
             </motion.div>
           ))}
-
         </div>
 
         {/* CTA Buttons */}
 
         <div className="flex flex-col sm:flex-row justify-center gap-5 mt-16">
-
           <button
             className="
-              bg-blue-700
-              hover:bg-blue-800
+              bg-[#2163A6]
+              hover:bg-[#2E7BC4]
               text-white
               px-8
               py-4
               rounded-xl
-              font-medium
-              shadow-lg
+              font-semibold
+              shadow-[0_12px_30px_rgba(33,99,166,0.35)]
               transition
+              duration-300
+              hover:-translate-y-1
             "
           >
             Book a Consultation
           </button>
 
-          <button
+          <a
+            href="#services"
             className="
-              bg-white/80
-              backdrop-blur-lg
+              bg-transparent
               border
-              border-blue-200
-              hover:border-blue-500
+              border-white/20
+              hover:border-[#3E7CB1]
+              hover:bg-white/[0.05]
+              text-white
               px-8
               py-4
               rounded-xl
               font-medium
               transition
+              duration-300
+              text-center
             "
           >
             Explore Services
-          </button>
-
+          </a>
         </div>
-
       </div>
-
     </section>
   );
 };
