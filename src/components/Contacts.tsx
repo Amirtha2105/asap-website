@@ -94,7 +94,7 @@ const Contact = () => {
 
                 <div>
                   <p className="font-semibold text-white">Email</p>
-                  <p className="text-[#B7C4D4]">divya.vasan18@gmail.com</p>
+                  <p className="text-[#B7C4D4]">maathmagic85@gmail.com</p>
                 </div>
               </div>
 
@@ -170,7 +170,7 @@ const Contact = () => {
               "
             >
               <h4 className="text-2xl font-bold">
-                Schedule a Free Consultation Today
+                Ready to Scale Your Practice's Capacity?
               </h4>
 
               <a
@@ -191,7 +191,7 @@ const Contact = () => {
                   duration-300
                 "
               >
-                Schedule Consultation
+                Set Up a Strategy Call
               </a>
             </div>
           </motion.div>

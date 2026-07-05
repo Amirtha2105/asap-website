@@ -1,38 +1,32 @@
 const Vision = () => {
   return (
-    <section
+    <div
       className="
-        relative
-        overflow-hidden
-        py-20
+        flex-1
+        bg-white/[0.04]
+        backdrop-blur-sm
+        border
+        border-white/10
+        rounded-3xl
+        p-8
+        md:p-10
+        hover:bg-white/[0.06]
+        hover:border-[#3E7CB1]/30
+        transition-all
+        duration-300
+        text-left
       "
     >
-      {/* Ambient glow layer only — base gradient now lives in the shared page wrapper */}
-      <div className="absolute inset-0">
-        <div
-          className="
-            absolute top-1/2 left-1/2
-            -translate-x-1/2 -translate-y-1/2
-            w-[480px] h-[480px]
-            rounded-full
-            bg-[radial-gradient(circle,rgba(33,99,166,0.16),transparent_70%)]
-            blur-3xl
-          "
-        />
-      </div>
+   
+      <h3 className="text-2xl md:text-3xl font-bold text-white">
+        Our Vision
+      </h3>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-
-        <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
-          Our Vision
-        </h2>
-
-        <p className="mt-8 text-[#B7C4D4] text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-          To become a trusted offshore finance operations partner for the
-          clients we serve.
-        </p>
-      </div>
-    </section>
+      <p className="mt-6 text-[#B7C4D4] text-base md:text-lg leading-relaxed">
+        To become a trusted offshore finance operations partner for the
+        clients we serve.
+      </p>
+    </div>
   );
 };
 

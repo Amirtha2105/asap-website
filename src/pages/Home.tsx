@@ -29,8 +29,15 @@ function Home() {
 
         <Hero />
         <About />
-        <Mission />
-        <Vision />
+        
+        {/* Mission & Vision Side-by-Side Section */}
+        <section className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 pb-20">
+          <div className="grid md:grid-cols-2 gap-8 items-stretch">
+            <Mission />
+            <Vision />
+          </div>
+        </section>
+
         <Services />
         <WhyChooseUs />
         <Process />

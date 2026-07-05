@@ -1,28 +1,3 @@
-import { FaArrowRight } from "react-icons/fa";
-
-const advantages = [
-  {
-    title: "Expertise You Can Trust",
-    desc: "Our professionals bring years of experience across industries and finance functions.",
-  },
-  {
-    title: "Cost Efficiency",
-    desc: "Reduce operational costs without compromising quality.",
-  },
-  {
-    title: "Scalability",
-    desc: "Flexible solutions that grow with your business requirements.",
-  },
-  {
-    title: "Accuracy & Compliance",
-    desc: "Robust controls and quality checks ensure reliable financial information.",
-  },
-  {
-    title: "Technology Driven",
-    desc: "We leverage modern accounting platforms and automation tools to improve efficiency and transparency.",
-  },
-];
-
 const startupReasons = [
   {
     icon: "📈",
@@ -74,59 +49,7 @@ const WhyChooseUs = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-10">
         {/* Section Heading */}
-
-        <div className="text-center mb-20">
-          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white max-w-4xl mx-auto leading-tight">
-            Why Choose Us
-          </h2>
-          
-        </div>
-
-        {/* Main Title A */}
-
-        <div className="mb-24">
-          <h3 className="text-3xl font-bold text-white mb-12">
-            What Sets Us Apart
-          </h3>
-
-          <p className="text-xl text-[#9FC1E0] mb-10">
-            Reliable offshore partner for UK accounting firms
-          </p>
-
-          <div className="space-y-8">
-            {advantages.map((item) => (
-              <div
-                key={item.title}
-                className="
-                  flex
-                  gap-5
-                  border-l-4
-                  border-white/15
-                  pl-6
-                  hover:border-[#3E7CB1]
-                  transition-all
-                  duration-300
-                "
-              >
-                <div className="mt-1 text-[#6FA8DC]">
-                  <FaArrowRight />
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-semibold text-white">
-                    {item.title}
-                  </h4>
-
-                  <p className="mt-2 text-[#B7C4D4] leading-7">
-                    {item.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Main Title B */}
+        {/* Main Title */}
 
         <div>
           <div className="text-center">

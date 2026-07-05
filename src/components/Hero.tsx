@@ -107,7 +107,7 @@ const Hero = () => {
         >
           Reliable Offshore Accounting Support
           <br />
-          for UK Accounting Firms
+          for Startups and Scale-ups
         </motion.h2>
 
         {/* Description */}
@@ -127,7 +127,7 @@ const Hero = () => {
             leading-relaxed
           "
         >
-          Helping UK accounting practices scale efficiently
+          Helping Start ups and Scale-ups scale efficiently
           through dedicated bookkeeping and finance support
           teams from India.
         </motion.p>
@@ -208,7 +208,7 @@ const Hero = () => {
               text-center
             "
           >
-            Book a Consultation
+            Start a Conversation
           </a>
 
           <a

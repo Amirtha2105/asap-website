@@ -1,38 +1,33 @@
 const Mission = () => {
   return (
-    <section
+    <div
       className="
-        relative
-        overflow-hidden
-        py-28
+        flex-1
+        bg-white/[0.04]
+        backdrop-blur-sm
+        border
+        border-white/10
+        rounded-3xl
+        p-8
+        md:p-10
+        hover:bg-white/[0.06]
+        hover:border-[#3E7CB1]/30
+        transition-all
+        duration-300
+        text-left
       "
     >
-      {/* Ambient glow layer only — base gradient now lives in the shared page wrapper */}
-      <div className="absolute inset-0">
-        <div
-          className="
-            absolute top-0 left-1/3
-            w-[420px] h-[420px]
-            rounded-full
-            bg-[radial-gradient(circle,rgba(33,99,166,0.2),transparent_70%)]
-            blur-3xl
-          "
-        />
-      </div>
+     
+      <h3 className="text-2xl md:text-3xl font-bold text-white">
+        Our Mission
+      </h3>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-
-        <h2 className="mt-4 text-4xl md:text-5xl font-bold text-white">
-          Our Mission
-        </h2>
-
-        <p className="mt-8 text-[#B7C4D4] text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-          To deliver reliable, process-driven, and scalable accounting
-          support services that enable firms to focus on growth and client
-          advisory services.
-        </p>
-      </div>
-    </section>
+      <p className="mt-6 text-[#B7C4D4] text-base md:text-lg leading-relaxed">
+        To deliver reliable, process-driven, and scalable accounting
+        support services that enable firms to focus on growth and client
+        advisory services.
+      </p>
+    </div>
   );
 };
 

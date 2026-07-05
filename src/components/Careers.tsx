@@ -3,15 +3,10 @@ import { CAREERS_FORM_URL } from "../constants/forms";
 import {
   FaUserTie,
   FaCalculator,
-  FaFileInvoiceDollar,
   FaArrowRight,
 } from "react-icons/fa";
 
 const positions = [
-  {
-    icon: <FaFileInvoiceDollar />,
-    title: "Bookkeepers",
-  },
   {
     icon: <FaCalculator />,
     title: "Accountants",
