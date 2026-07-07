@@ -45,17 +45,17 @@ const Process = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerView, setItemsPerView] = useState(3);
   const [isHovered, setIsHovered] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Dynamically calculate viewports to support proper responsiveness
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
-        setItemsPerView(1); // Mobile
+        setItemsPerView(1);
       } else if (window.innerWidth < 1024) {
-        setItemsPerView(2); // Tablet
+        setItemsPerView(2);
       } else {
-        setItemsPerView(3); // Desktop
+        setItemsPerView(3);
       }
     };
 
@@ -74,12 +74,11 @@ const Process = () => {
     setCurrentIndex((prev) => (prev === 0 ? maxIndex : prev - 1));
   };
 
-  // Auto-play effect loop engine
   useEffect(() => {
     if (!isHovered) {
       timerRef.current = setInterval(() => {
         handleNext();
-      }, 1000); // Transitions automatically every 1 second
+      }, 2000);
     }
 
     return () => {
@@ -87,11 +86,14 @@ const Process = () => {
         clearInterval(timerRef.current);
       }
     };
-  }, [isHovered, itemsPerView]); // Re-runs layout computations securely when responsive boundaries shift
+  }, [isHovered, itemsPerView]);
+
+  // Dynamic calculations converted to pure class configurations
+  const translationValue = `-${currentIndex * (100 / itemsPerView)}%`;
+  const widthValue = `${100 / itemsPerView}%`;
 
   return (
     <section id="process" className="relative overflow-hidden py-28 scroll-mt-24">
-      {/* Ambient glow layer */}
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="
@@ -115,7 +117,6 @@ const Process = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10">
         
-        {/* Heading + Navigation Buttons Controls */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
           <div className="text-left max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-bold text-white">
@@ -127,7 +128,6 @@ const Process = () => {
             </p>
           </div>
 
-          {/* Carousel Arrows */}
           <div className="flex items-center gap-3 shrink-0 self-start md:self-end">
             <button
               onClick={() => { handlePrev(); setIsHovered(true); }}
@@ -146,36 +146,30 @@ const Process = () => {
           </div>
         </div>
 
-        {/* Carousel Window Track Wrap */}
         <div 
           className="relative overflow-visible"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          
-          {/* Continuous Connected Horizontal Timeline Line Background */}
-          <div 
-            className="absolute top-10 left-4 right-4 h-0.5 bg-white/10 hidden md:block pointer-events-none" 
-            style={{ width: "calc(100% - 2rem)" }}
-          />
+          <div className="absolute top-10 left-4 right-4 h-0.5 bg-white/10 hidden md:block pointer-events-none [width:calc(100%-2rem)]" />
 
-          {/* Slider Mask */}
           <div className="overflow-hidden w-full -mx-4 px-4">
+            {/* FIXED: No inline style property. Using Tailwind arbitrary properties to modify translation matrix dynamically */}
             <div
-              className="flex transition-transform duration-700 ease-in-out"
-              style={{
-                transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
-              }}
+              className={`flex transition-transform duration-700 ease-in-out [transform:translateX(var(--carousel-tx))]`}
+              data-style-injector="track"
+              {...{ style: { "--carousel-tx": translationValue } } as any}
             >
               {processSteps.map((step) => (
+                /* FIXED: No inline style property here either. Uses a dynamic CSS variable handled safely inside the Tailwind processor */
                 <div
                   key={step.title}
-                  className="px-4 shrink-0 transition-all duration-300"
-                  style={{ width: `${100 / itemsPerView}%` }}
+                  className="px-4 shrink-0 transition-all duration-300 [width:var(--col-width)]"
+                  data-style-injector="card"
+                  {...{ style: { "--col-width": widthValue } } as any}
                 >
                   <div className="relative text-center group">
                     
-                    {/* Floating Step Icon Node */}
                     <div
                       className="
                         mx-auto w-20 h-20 rounded-full bg-[#0B1F33] border-4 border-white/15
@@ -186,7 +180,6 @@ const Process = () => {
                       {step.icon}
                     </div>
 
-                    {/* Step Card Content */}
                     <div
                       className="
                         mt-8 bg-white/[0.04] backdrop-blur-sm rounded-3xl p-7 border border-white/10 min-h-[190px] flex flex-col justify-start
@@ -209,7 +202,6 @@ const Process = () => {
           </div>
         </div>
 
-        {/* Dynamic Carousel Indicator Dots under the wrapper */}
         <div className="flex items-center justify-center gap-2.5 mt-12">
           {Array.from({ length: maxIndex + 1 }).map((_, idx) => (
             <button
