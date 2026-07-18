@@ -105,9 +105,9 @@ const Hero = () => {
             leading-tight
           "
         >
-          Reliable Offshore Accounting Support
+          Your Trusted Outsourced 
           <br />
-          for Startups and Scale-ups
+          Finance Department
         </motion.h2>
 
         {/* Description */}
@@ -127,9 +127,10 @@ const Hero = () => {
             leading-relaxed
           "
         >
-          Helping Start ups and Scale-ups scale efficiently
-          through dedicated bookkeeping and finance support
-          teams from India.
+          MaAthMagic Business Services helps startups, SMEs, and growing businesses simplify their Finance operations through reliable bookkeeping, accounting, payroll, compliance, and Virtual CFO services.
+          <br></br>
+          <br></br>
+          <strong> We manage your Finance function, so you can focus on growing your business. </strong>
         </motion.p>
 
         {/* Services Heading */}

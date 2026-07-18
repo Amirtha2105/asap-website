@@ -6,9 +6,14 @@ import {
 
 const expertiseList = [
   "Preparation and reporting of Profit & Loss and Balance Sheets",
-  "Management reporting (MIS)",
-  "Finalization of accounts",
-  "Handling complex compliance-related responsibilities",
+  "Financial Accounting & Bookkeeping",
+  "Management Information System (MIS) Reporting",
+  "Finalization of Accounts",
+  "GST, TDS & Statutory Compliance",
+  "Payroll & Finance Operations",
+  "Budgeting & Cash Flow Management",
+  "Process Improvement & Internal Controls",
+  "Liaising with Auditors and Regulatory Authorities"
 ];
 
 const About = () => {
@@ -48,25 +53,17 @@ const About = () => {
               About Us
             </h2>
             <p className="text-[#B7C4D4] text-lg leading-9 mb-6">
-              MaAthMagic Business Services is an India-based offshore
-              accounting support company providing reliable and scalable
-              bookkeeping and finance operations services to accounting
-              firms, startups, and scaleups.
+              At <strong>MaAthMagic Business Services</strong>, we believe that every business deserves access to professional Finance expertise without the cost of maintaining a large in-house Finance team.
             </p>
             <p className="text-[#B7C4D4] text-lg leading-9">
-              We specialize in supporting accounting practices with
-              day-to-day finance processes through dedicated offshore teams
-              that operate as an extension of our clients' businesses.
-              Our goal is to help firms improve efficiency, reduce
-              operational workload, and scale profitably without
-              compromising on quality.
+              <strong>Backed by over two decades of professional experience</strong>, we deliver accurate accounting, financial reporting, payroll, taxation, compliance, budgeting, and management reporting solutions that help businesses operate efficiently and make informed financial decisions. Whether you need bookkeeping support, payroll processing, GST compliance, management reporting, or Virtual CFO services, we become an extension of your team—providing dependable Finance operations that grow with your business.
             </p>
           </div>
           
           <div className="lg:col-span-2 bg-[#2163A6]/10 border border-white/10 p-8 rounded-3xl backdrop-blur-sm">
             <h4 className="text-xl font-semibold text-white mb-3">Our Commitment</h4>
             <p className="text-[#B7C4D4] leading-7 text-sm">
-              With strong experience in finance operations, process management, and accounting support functions, we focus on delivering accuracy, consistency, and timely execution across all global client engagements.
+              We are committed to delivering accurate, timely, and reliable accounting and Finance solutions. Our goal is to simplify your financial operations so you can focus on growing your business.
             </p>
           </div>
         </div>
@@ -89,10 +86,10 @@ const About = () => {
             
             <div className="space-y-4 text-[#B7C4D4] text-base leading-7">
               <p>
-                I am a highly motivated and results-driven Finance Professional with over <strong>20+ years of experience</strong> in Finance and Accounts operations across diverse industries and sectors.
+                Divya Kalyan is the Founder and Managing Director of MaAthMagic Business Services. With over two decades of experience in Finance, accounting, and business operations, she has partnered with businesses across diverse industries to strengthen financial processes, improve reporting, and ensure compliance.
               </p>
               <p>
-                Throughout my career, I have collaborated closely with senior management teams to address complex financial challenges and drive business performance improvements. With a forward-looking approach, I stay aligned with emerging trends and developments in the accounting domain.
+                Her passion is to help businesses build efficient Finance functions that support informed decision-making and sustainable growth. She believes that timely financial information and well-managed processes are the foundation of every successful business.
               </p>
             </div>
 

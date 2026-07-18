@@ -47,11 +47,10 @@ const Contact = () => {
           </h2>
 
           <p className="mt-6 text-lg text-[#B7C4D4] max-w-4xl mx-auto leading-8">
-            Looking for a reliable offshore accounting support partner?
+            Let's Simplify Your Finance Operations
+            
             <br />
-            We would be happy to discuss how our India-based accounting
-            support team can help your firm improve efficiency and
-            scalability.
+            Whether you're a startup or an established business, we're here to help you streamline your accounting, improve compliance, strengthen financial reporting, and gain better visibility into your business performance.
           </p>
         </div>
 
@@ -170,7 +169,7 @@ const Contact = () => {
               "
             >
               <h4 className="text-2xl font-bold">
-                Ready to Scale Your Practice's Capacity?
+                📞 Schedule a Free Discovery Call Today
               </h4>
 
               <a

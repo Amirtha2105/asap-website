@@ -23,9 +23,7 @@ const Mission = () => {
       </h3>
 
       <p className="mt-6 text-[#B7C4D4] text-base md:text-lg leading-relaxed">
-        To deliver reliable, process-driven, and scalable accounting
-        support services that enable firms to focus on growth and client
-        advisory services.
+        To provide reliable, accurate, and scalable accounting and Finance solutions that help businesses simplify their financial operations and focus on growth.
       </p>
     </div>
   );

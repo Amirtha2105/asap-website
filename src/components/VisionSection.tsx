@@ -23,8 +23,7 @@ const Vision = () => {
       </h3>
 
       <p className="mt-6 text-[#B7C4D4] text-base md:text-lg leading-relaxed">
-        To become a trusted offshore finance operations partner for the
-        clients we serve.
+        To become a trusted outsourced Finance partner, helping businesses simplify their financial operations and achieve sustainable success.
       </p>
     </div>
   );

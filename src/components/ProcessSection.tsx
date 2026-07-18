@@ -14,30 +14,30 @@ const processSteps = [
     icon: <FaPhoneAlt />,
     title: "Step 1 – Discovery Call",
     description:
-      "Understanding your firm's requirements, workflows, and operational pain points.",
+      "We begin by understanding your business, current processes, challenges, and service requirements.",
   },
   {
     icon: <FaProjectDiagram />,
-    title: "Step 2 – Due Diligence",
+    title: "Step 2 – Business Assessment",
     description:
-      "Defining Process Mapping, SOPs, timelines, responsibilities, and reporting structures.",
+      "We review your existing accounting processes, systems, and documentation to assess your needs and identify the best approach.",
   },
   {
     icon: <FaUsers />,
     title: "Step 3 – Team Allocation",
     description:
-      "Assigning dedicated accounting resources based on your business requirements.",
+      "Based on your requirements, we assign a dedicated team with the right expertise to support your business.",
   },
   {
     icon: <FaGraduationCap />,
-    title: "Step 4 – Transition & Training",
-    description: "Knowledge transfer and onboarding support.",
+    title: "Step 4 – Transition & Onboarding",
+    description: "We ensure a smooth handover by setting up workflows, understanding your processes, and training our team on your business requirements.",
   },
   {
     icon: <FaChartLine />,
     title: "Step 5 – Ongoing Delivery & Reporting",
     description:
-      "Consistent execution with regular communication and performance tracking.",
+      "We deliver accounting and Finance services on time, provide regular reports, and continuously support your business with accurate and reliable financial information.",
   },
 ];
 

@@ -13,7 +13,7 @@ const Footer = () => {
             </h2>
 
             <p className="mt-5 text-[#8FA3B8] leading-8">
-              Reliable offshore accounting support services from India for Start ups and Scale-ups.
+              Making Finance Simple. Empowering Business Growth.
             </p>
           </div>
 
