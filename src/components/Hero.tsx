@@ -5,9 +5,8 @@ const services = [
   "Bookkeeping & Reconciliations",
   "Accounts Payable & Receivable",
   "Payroll Support",
-  "VAT Working Papers",
   "Month-End Accounting Support",
-  "Dedicated Offshore Accounting Teams",
+  "Dedicated Accounting Teams",
 ];
 
 const Hero = () => {
