@@ -4,7 +4,15 @@ import logo from "../assets/logo.png";
 
 const navItems = ["About", "Services", "Why Us", "Process", "Careers", "Contact"];
 
-const toSlug = (label: string) => label.toLowerCase().replace(/\s+/g, "");
+// Map display titles directly to section HTML IDs
+const slugMap: Record<string, string> = {
+  "About": "about",
+  "Services": "services",
+  "Why Us": "why-us",
+  "Process": "process",
+  "Careers": "careers",
+  "Contact": "contact",
+};
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -34,7 +42,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <a
                 key={item}
-                href={`#${toSlug(item)}`}
+                href={`#${slugMap[item] || item.toLowerCase()}`}
                 className="text-white/90 font-medium hover:text-white transition duration-200 drop-shadow-sm"
               >
                 {item}
@@ -56,7 +64,7 @@ const Navbar = () => {
             {navItems.map((item) => (
               <a
                 key={item}
-                href={`#${toSlug(item)}`}
+                href={`#${slugMap[item] || item.toLowerCase()}`}
                 onClick={() => setOpen(false)}
                 className="text-white/90 font-medium hover:text-white transition duration-200"
               >
