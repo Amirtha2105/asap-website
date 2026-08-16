@@ -13,10 +13,11 @@ const Navbar = () => {
     <nav
       className="
         fixed top-0 w-full z-50
-        bg-[#060B14]/80
-        backdrop-blur-md
+        bg-[#004b93]/40
+        backdrop-blur-xl
         border-b
-        border-white/10
+        border-white/20
+        shadow-lg
       "
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
@@ -34,7 +35,7 @@ const Navbar = () => {
               <a
                 key={item}
                 href={`#${toSlug(item)}`}
-                className="text-[#B7C4D4] hover:text-white transition duration-200"
+                className="text-white/90 font-medium hover:text-white transition duration-200 drop-shadow-sm"
               >
                 {item}
               </a>
@@ -51,13 +52,13 @@ const Navbar = () => {
         </div>
 
         {open && (
-          <div className="md:hidden pb-4 flex flex-col gap-4">
+          <div className="md:hidden pb-6 pt-2 flex flex-col gap-4 border-t border-white/20">
             {navItems.map((item) => (
               <a
                 key={item}
                 href={`#${toSlug(item)}`}
                 onClick={() => setOpen(false)}
-                className="text-[#B7C4D4] hover:text-white transition duration-200"
+                className="text-white/90 font-medium hover:text-white transition duration-200"
               >
                 {item}
               </a>

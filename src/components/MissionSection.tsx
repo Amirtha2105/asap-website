@@ -3,26 +3,27 @@ const Mission = () => {
     <div
       className="
         flex-1
-        bg-white/[0.04]
-        backdrop-blur-sm
+        bg-white/85
+        backdrop-blur-md
         border
-        border-white/10
+        border-sky-300/60
         rounded-3xl
         p-8
         md:p-10
-        hover:bg-white/[0.06]
-        hover:border-[#3E7CB1]/30
+        shadow-[0_12px_32px_rgba(2,132,199,0.18)]
+        hover:border-sky-500
+        hover:bg-white
+        hover:shadow-[0_20px_45px_rgba(2,132,199,0.28)]
         transition-all
         duration-300
         text-left
       "
     >
-     
-      <h3 className="text-2xl md:text-3xl font-bold text-white">
+      <h3 className="text-2xl md:text-3xl font-bold text-slate-900">
         Our Mission
       </h3>
 
-      <p className="mt-6 text-[#B7C4D4] text-base md:text-lg leading-relaxed">
+      <p className="mt-6 text-slate-800 text-base md:text-lg leading-relaxed font-medium">
         To provide reliable, accurate, and scalable accounting and Finance solutions that help businesses simplify their financial operations and focus on growth.
       </p>
     </div>
