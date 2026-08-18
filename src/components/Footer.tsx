@@ -34,14 +34,6 @@ const Footer = () => {
                 Services
               </a>
 
-              <a href="#why-us" className="hover:text-sky-400 transition-colors duration-200">
-                Why Choose Us
-              </a>
-
-              <a href="#careers" className="hover:text-sky-400 transition-colors duration-200">
-                Careers
-              </a>
-
               <a href="#contact" className="hover:text-sky-400 transition-colors duration-200">
                 Contact Us
               </a>

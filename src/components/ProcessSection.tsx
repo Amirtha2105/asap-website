@@ -5,8 +5,6 @@ import {
   FaUsers,
   FaGraduationCap,
   FaChartLine,
-  FaPlay,
-  FaPause,
 } from "react-icons/fa";
 
 const processSteps = [
@@ -187,15 +185,6 @@ const Process = () => {
               })}
             </div>
           </div>
-
-          {/* Pause / Play Control Toggle */}
-          <button
-            onClick={() => setIsRotating(!isRotating)}
-            className="mt-8 flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-sky-300 text-sky-700 text-xs font-semibold hover:bg-white shadow-sm transition-all"
-          >
-            {isRotating ? <FaPause size={10} /> : <FaPlay size={10} />}
-            {isRotating ? "Pause Orbit" : "Resume Orbit"}
-          </button>
         </div>
 
         {/* Mobile / Tablet Sequential View */}
