@@ -34,6 +34,10 @@ const Footer = () => {
                 Services
               </a>
 
+              <a href="#why-us" className="hover:text-sky-400 transition-colors duration-200">
+                Why Choose Us
+              </a>
+
               <a href="#careers" className="hover:text-sky-400 transition-colors duration-200">
                 Careers
               </a>
@@ -44,13 +48,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Follow Us */}
+          {/* Connect With Us */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-5">Follow Us</h3>
+            <h3 className="text-xl font-bold text-white mb-5">Connect With Us</h3>
 
             <div className="space-y-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/maathmagic-business-services/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
                   flex
                   items-center
@@ -69,7 +75,9 @@ const Footer = () => {
               </a>
 
               <a
-                href="mailto:maathmagic85@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=maathmagic85@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="
                   flex
                   items-center
